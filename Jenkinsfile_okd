@@ -1,7 +1,7 @@
 def label = "agent-${UUID.randomUUID().toString()}"
 def gitBranch = 'master'
-def docker_registry = "https://211.252.85.148:40002"  
-def imageName = "211.252.85.148:40002/mj-proj-jenkins/newedu2"
+def docker_registry = "http://211.34.231.84:31491"  
+def imageName = "211.34.231.84:31491/mj-proj-jenkins/newedu2"
 def TAG = getTag(gitBranch)
 
 podTemplate(label: label, serviceAccount: 'jenkins-admin', namespace: 'mj-proj',
